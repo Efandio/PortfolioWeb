@@ -3,7 +3,7 @@ import { Badge } from "./ui/badge";
 import { Card, CardContent } from "./ui/card";
 
 const mySkills = [
-    {id: 1, name: 'Frontend Development', description: 'Creating responsive and intuitive user interfaces with modern frameworks and libraries.', skills: ['HTML/CSS', 'JavaScript / TypeScript', 'React', 'Vue', 'Tailwind CSS']}
+    {id: 1, name: 'Frontend Development', description: 'Creating responsive and intuitive user interfaces with modern frameworks and libraries.', skills: ['HTML/CSS', 'JavaScript / TypeScript', 'React', 'Vue', 'Tailwind CSS', 'Redux Toolkit', 'Pinia']}
 ];
 
 interface MySkills {
