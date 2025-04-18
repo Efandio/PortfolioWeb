@@ -2,11 +2,12 @@ import { Button } from "./ui/button";
 
 interface HeroSectionProps {
     className?: string;
+    id: string;
 };
 
-const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ className, id }) => {
     return (
-        <main className={`flex flex-col gap-8 lg:gap-14 items-center w-full h-full justify-center py-10 ${className}`}>
+        <main id={id} className={`flex flex-col gap-8 lg:gap-14 items-center w-full h-full justify-center py-10 ${className}`}>
         {/* Nama & Job Title */}
             <section className="flex flex-col w-full justify-center items-center">
                 <span className="-translate-x-32 font-bold italic lg:hidden">Hello,</span>
