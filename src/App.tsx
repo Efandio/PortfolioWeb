@@ -1,5 +1,6 @@
 import AboutMe from "./components/AboutMe"
 import ContactSection from "./components/ContactSection"
+import FooterSection from "./components/FooterSection"
 import HeroSection from "./components/HeroSection"
 import MySkillsSection from "./components/MySkillsSection"
 import Navbar from "./components/Navbar"
@@ -8,7 +9,7 @@ import ProjectsSection from "./components/ProjectsSection"
 function App() {
 
   return (
-    <main className="box-border text-white w-screen h-screen flex flex-collg:pb-0 overflow-x-hidden">
+    <main className="box-border text-white w-screen h-screen flex flex-collg:pb-0 overflow-x-hidden scroll-smooth">
       <Navbar aboutMe="#aboutMe" skills="#skills" projects="#projects" contact="#contact" className="px-5 py-10" />
 
       <section className="w-full h-full">
@@ -21,6 +22,8 @@ function App() {
         <ProjectsSection id="projects" className="pt-16 lg:pt-22" />
 
         <ContactSection id="contact" className="pt-22 lg:pt-26" />
+
+        <FooterSection />
       </section>
     </main>
   )
