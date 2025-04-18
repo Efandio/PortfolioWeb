@@ -21,7 +21,7 @@ function App() {
 
         <ProjectsSection id="projects" className="pt-16 lg:pt-22" />
 
-        <ContactSection id="contact" className="pt-22 lg:pt-26" />
+        <ContactSection id="contact" className="pt-22 lg:pt-26 pb-20 lg:pb-28" />
 
         <FooterSection />
       </section>
