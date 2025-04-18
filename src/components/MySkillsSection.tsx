@@ -27,11 +27,11 @@ const MySkillsSection: React.FC<MySkills> = ({ id, className }) => {
                     </div>
 
                     <div className="flex flex-col gap-2">
-                        <h3 className="font-semibold text-xl">{skill.name}</h3>
+                        <h3 className="font-semibold text-xl lg:text-2xl">{skill.name}</h3>
                         <p className="leading-4 text-xs lg:text-sm text-black/50">{skill.description}</p>
-                        <div className="grid grid-cols-2 gap-2 w-40 pt-1">
+                        <div className="grid grid-cols-2 gap-2 w-40 lg:w-50 mt-1 lg:mt-3">
                             {skill.skills.map((i) => (
-                                <Badge className="text-[8px] lg:text-[10px] w-fit">{i}</Badge>
+                                <Badge className="text-[8px] lg:text-[12px] w-fit">{i}</Badge>
                             ))}
                         </div>
                     </div>
