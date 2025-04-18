@@ -120,4 +120,5 @@
 
 :root {
   background: black;
+  scroll-behavior: smooth;
 }
