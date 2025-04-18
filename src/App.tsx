@@ -2,6 +2,7 @@ import AboutMe from "./components/AboutMe"
 import HeroSection from "./components/HeroSection"
 import MySkillsSection from "./components/MySkillsSection"
 import Navbar from "./components/Navbar"
+import ProjectsSection from "./components/ProjectsSection"
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
         <AboutMe id="aboutMe" className="mt-5 lg:mt-10" />
 
         <MySkillsSection id="skills" className="mt-16 lg:mt-18" />
+
+        <ProjectsSection />
       </section>
     </main>
   )
