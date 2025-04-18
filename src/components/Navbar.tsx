@@ -4,17 +4,17 @@ import { Button } from "./ui/button";
 interface NavbarProps {
     aboutMe?: string;
     skills?: string;
-    portfolio?: string;
+    projects?: string;
     contact?: string;
     className?: string
 };
 
-const Navbar: React.FC<NavbarProps> = ({ aboutMe, skills, portfolio, contact, className }) => {
+const Navbar: React.FC<NavbarProps> = ({ aboutMe, skills, projects, contact, className }) => {
 
-    const [ activeButton, setActiveButton ] = useState<'' | 'aboutMe' | 'skills' | 'portfolio' | 'contact'>('')
+    const [ activeButton, setActiveButton ] = useState<'' | 'aboutMe' | 'skills' | 'projects' | 'contact'>('')
 
 
-    const handleClick = (button: 'aboutMe' | 'skills' | 'portfolio' | 'contact') => {
+    const handleClick = (button: 'aboutMe' | 'skills' | 'projects' | 'contact') => {
         setActiveButton((prev) => prev === button ? '' : button);
     };
 
@@ -27,8 +27,8 @@ const Navbar: React.FC<NavbarProps> = ({ aboutMe, skills, portfolio, contact, cl
                 <a href={skills}>
                     <Button onClick={() => handleClick('skills')} className={`${activeButton === 'skills' ? '-translate-y-0' : '-translate-y-0.5 border-b-3 border-slate-500'}`} size='sm'>Skills</Button>
                 </a>
-                <a href={portfolio}>
-                    <Button onClick={() => handleClick('portfolio')} className={`${activeButton === 'portfolio' ? '-translate-y-0' : '-translate-y-0.5 border-b-3 border-slate-500'}`} size='sm'>Portfolio</Button>
+                <a href={projects}>
+                    <Button onClick={() => handleClick('projects')} className={`${activeButton === 'projects' ? '-translate-y-0' : '-translate-y-0.5 border-b-3 border-slate-500'}`} size='sm'>Projects</Button>
                 </a>
                 <a href={contact}>
                     <Button onClick={() => handleClick('contact')} className={`${activeButton === 'contact' ? '-translate-y-0' : '-translate-y-0.5 border-b-3 border-slate-500'}`} size='sm'>Contact</Button>

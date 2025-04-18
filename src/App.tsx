@@ -8,7 +8,7 @@ function App() {
 
   return (
     <main className="box-border text-white w-screen h-screen flex flex-collg:pb-0 overflow-x-hidden">
-      <Navbar aboutMe="#aboutMe" skills="#skills" className="px-5 py-10" />
+      <Navbar aboutMe="#aboutMe" skills="#skills" projects="#projects" className="px-5 py-10" />
 
       <section className="w-full h-full">
         <HeroSection className="mt-26 lg:mt-30" />
@@ -17,7 +17,7 @@ function App() {
 
         <MySkillsSection id="skills" className="mt-16 lg:mt-18" />
 
-        <ProjectsSection />
+        <ProjectsSection id="projects" className="mt-16 lg:mt-22" />
       </section>
     </main>
   )
