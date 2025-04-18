@@ -45,7 +45,7 @@ const MySkillsSection: React.FC<MySkills> = ({ id, className }) => {
                 <Badge className="justify-center px-5 text-base">Skills</Badge>
             </span>
 
-            <section className="grid grid-cols-1 lg:grid-cols-2 justify-items-center ">
+            <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 justify-items-center ">
                 {mySkills.map((skill) => (
                 <Card className="w-[70vw] lg:w-[25vw]">
                     <CardContent className="flex flex-col gap-2">
