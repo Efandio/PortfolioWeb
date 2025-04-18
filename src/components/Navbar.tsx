@@ -6,19 +6,21 @@ interface NavbarProps {
     skills?: string;
     portfolio?: string;
     contact?: string;
+    className?: string
 };
 
-const Navbar: React.FC<NavbarProps> = ({ aboutMe, skills, portfolio, contact }) => {
+const Navbar: React.FC<NavbarProps> = ({ aboutMe, skills, portfolio, contact, className }) => {
 
     const [ activeButton, setActiveButton ] = useState<'' | 'aboutMe' | 'skills' | 'portfolio' | 'contact'>('')
 
+
     const handleClick = (button: 'aboutMe' | 'skills' | 'portfolio' | 'contact') => {
         setActiveButton((prev) => prev === button ? '' : button);
-    }
+    };
 
     return (
         <>
-            <nav className={`navbar bg-gray-200 flex items-center lg:justify-evenly w-full h-16 lg:px-20 fixed`}>
+            <nav className={`navbar flex items-center justify-evenly lg:justify-evenly w-full h-16 lg:px-20 fixed ${className}`}>
                 <a href={aboutMe}>
                     <Button onClick={() => handleClick('aboutMe')} className={`${activeButton === 'aboutMe' ? '-translate-y-0 border-b-0' : '-translate-y-0.5 border-b-3 border-slate-500'}`} size='sm'>About Me</Button>
                 </a>
