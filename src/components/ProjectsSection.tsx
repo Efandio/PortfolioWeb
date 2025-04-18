@@ -67,7 +67,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className, id }) => {
                         <CardContent className="px-0">
                             <img className="rounded-lg" src={projects.image} alt="" />
                             
-                            <section className="px-4 flex flex-col gap-4 mt-2">
+                            <section className="px-4 flex flex-col justify-between h-[25vh] lg:h-[30vh] gap-4 mt-2">
                                 <div className="flex flex-col gap-1">
                                     <h3 className="font-semibold lg:text-xl">{projects.name}</h3>
                                     <p className="leading-4 text-black/70 text-sm">{projects.description}</p>
