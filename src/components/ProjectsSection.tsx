@@ -63,7 +63,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className, id }) => {
 
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center mt-8 lg:mt-14">
                 {myProjects.map((projects) => (
-                    <Card key={projects.id} className="w-[80vw] lg:w-[45vw] h-[50vh] lg:h-[85vh] py-0 px-0 border-none">
+                    <Card key={projects.id} className="w-[80vw] lg:w-[45vw] h-[50vh] lg:h-[90vh] py-0 px-0 border-none">
                         <CardContent className="px-0">
                             <img className="rounded-lg" src={projects.image} alt="" />
                             
