@@ -21,7 +21,7 @@ const myProjects = [
             'Redux Toolkit',
             'Tailwind CSS',
         ],
-        image: '/public/e-commerce.png',
+        image: '/e-commerce.png',
         link: {
             icon: {
                 dep: <SquareArrowOutUpRight color="#000000" strokeWidth={1.5} size={18} />,
@@ -39,7 +39,7 @@ const myProjects = [
         description:
             'A simple anime information website using data from the Anilist API.',
         tech: ['TypeScript', 'Vue', 'Vue Router', 'Pinia'],
-        image: '/public/anime.png',
+        image: '/anime.png',
         link: {
             icon: {
                 dep: <SquareArrowOutUpRight color="#000000" strokeWidth={1.5} size={18} />,
