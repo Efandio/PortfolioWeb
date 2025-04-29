@@ -75,8 +75,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className, id }) => {
 
                                 <div className="flex flex-col gap-3 pb-3">
                                     <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 w-50 lg:w-50">
-                                        {projects.tech.map((tech) => (
-                                            <Badge>{tech}</Badge>
+                                        {projects.tech.map((tech, index) => (
+                                            <Badge key={index}>{tech}</Badge>
                                         ))}
                                     </div>
                                     <div className="flex items-center gap-5">

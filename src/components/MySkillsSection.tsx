@@ -46,8 +46,8 @@ const MySkillsSection: React.FC<MySkills> = ({ id, className }) => {
             </span>
 
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 justify-items-center ">
-                {mySkills.map((skill) => (
-                <Card className="w-[70vw] lg:w-[25vw]">
+                {mySkills.map((skill, index) => (
+                <Card key={index} className="w-[70vw] lg:w-[25vw]">
                     <CardContent className="flex flex-col gap-2">
                     <div className="bg-gray-200 h-fit w-fit p-2 rounded-full">
                         <PanelsTopLeft size={28} />
@@ -57,8 +57,8 @@ const MySkillsSection: React.FC<MySkills> = ({ id, className }) => {
                         <h3 className="font-semibold text-xl lg:text-2xl">{skill.name}</h3>
                         <p className="leading-4 text-xs lg:text-sm text-black/50">{skill.description}</p>
                         <div className="grid grid-cols-2 gap-2 w-40 lg:w-70 mt-1 lg:mt-3">
-                            {skill.skills.map((i) => (
-                                <Badge className="text-[8px] lg:text-[12px] w-fit">{i}</Badge>
+                            {skill.skills.map((i, index) => (
+                                <Badge key={index} className="text-[8px] lg:text-[12px] w-fit">{i}</Badge>
                             ))}
                         </div>
                     </div>
